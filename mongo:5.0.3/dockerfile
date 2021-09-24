@@ -1,0 +1,5 @@
+FROM mongo:5.0.3
+RUN mkdir /mongo
+RUN mkdir /mongo/db
+COPY ./mongoConf.yml /mongo
+CMD mongod --config /mongo/mongoConf.yml
