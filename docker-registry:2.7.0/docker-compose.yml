@@ -1,3 +1,4 @@
+# 针对单服务器不依赖 nginx 等反向代理工具配置的 私有docker registry, 可以安装 apache/httpd 使用 htpasswd
 ddtregistry:
   restart: always
   image: registry:2.7.0
